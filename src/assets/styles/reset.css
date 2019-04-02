@@ -55,8 +55,41 @@ table {
 /* 新加入的css全局样式 */
 html {
 	font-size: 100px;
+	background: #f5f5f5;
+	/* 由于浏览器必须要在执行事件处理函数之后，才能知道有没有掉用过 preventDefault() ，这就导致了浏览器不能及时响应滚动，略有延迟。 */
+	touch-action: none;
 }
 
 a {
 	text-decoration: none;
+}
+
+/* 上分界线 */
+.border-top::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 0.02rem;
+	border-top: 0.02rem solid #ccc;
+}
+
+/* 右分界线 */
+.border-right::before {
+	content: "";
+	position: absolute;
+	width: 0.02rem;
+	height: 100%;
+	border-right: 0.02rem solid #ccc;
+	left: 50%;
+}
+
+/* 右箭头 */
+.right-arrow {
+	display: inline-block;
+	width: 0.2rem;
+	height: 0.2rem;
+	border-top: 0.01rem solid #000;
+	border-right: 0.01rem solid #000;
+	transform: rotate(45deg);
+	vertical-align: 10%;
 }

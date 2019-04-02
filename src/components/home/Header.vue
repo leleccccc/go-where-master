@@ -4,8 +4,7 @@
       <span class="iconfont">&#xe624;</span>
     </div>
     <div class="header-search">
-      <span class="iconfont">&#xe632;</span>
-      <span>输入城市/景点/游玩主题</span>
+      <span class="iconfont">&#xe632;输入城市/景点/游玩主题</span>
     </div>
     <div class="header-right">
       <span class="iconfont">北京&#xe600;</span>
@@ -15,35 +14,38 @@
 
 <script>
 export default {
-  name: 'MyHeader'
+  name: 'HomeHeader'
 }
 </script>
 
 <style lang="stylus" scoped>
 .header
   width: 100%;
-  height: .44rem;
+  height: .88rem;
   background: #00bcd4;
   color: #fff;
-  font-size: .18rem;
+  font-size: .36rem;
   display: flex;
-  line-height: .44rem;
+  line-height: .88rem;
   .header-left
-    width: .2rem;
-    padding: 0 .1rem;
+    width: .4rem;
+    padding: 0 .2rem;
     text-align: center;
     font-weight: bold;
   .header-search
     flex: 1;
     background: #fff;
-    height: .3rem;
-    margin: .07rem 0;
-    border-radius: .05rem;
+    height: .6rem;
+    margin: .14rem 0;
+    border-radius: .1rem;
     color: #e4e7ea;
-    line-height: .3rem;
-    font-size: .1rem;
-    padding-left: .1rem;
+    line-height: .6rem;
+    font-size: .2rem;
+    padding-left: .2rem;
   .header-right
-    font-size: .1rem;
-    padding: 0 .1rem;
+    font-size: .2rem;
+    padding: 0 .2rem;
+
+.iconfont
+  font-size: 0.3rem;
 </style>

@@ -1,0 +1,43 @@
+{
+  "data": [
+    {
+      "city": "北京",
+      "swiperList": [
+        { "id": 1, "imgUrl": "/api/img/swiper0.jpg" },
+        { "id": 2, "imgUrl":" /api/img/swiper1.jpg" },
+        { "id": 3, "imgUrl": "/api/img/swiper2.jpg" },
+        { "id": 4, "imgUrl": "/api/img/swiper3.jpg" },
+        { "id": 5, "imgUrl": "/api/img/swiper4.jpg" },
+        { "id": 6, "imgUrl": "/api/img/swiper5.jpg" },
+        { "id": 7, "imgUrl": "/api/img/swiper6.jpg" },
+        { "id": 8, "imgUrl": "/api/img/swiper7.jpg" }
+      ],
+      "iconsList": [
+        { "id": 1, "imgUrl": "/api/img/icon0.png", "title": "景点门票" },
+        { "id": 2, "imgUrl": "/api/img/icon1.png", "title": "一日游" },
+        { "id": 3, "imgUrl": "/api/img/icon2.png", "title": "北京必游" },
+        { "id": 4, "imgUrl": "/api/img/icon3.png", "title": "溜娃儿" },
+        { "id": 5, "imgUrl": "/api/img/icon4.png", "title": "爬长城" },
+        { "id": 6, "imgUrl": "/api/img/icon5.png", "title": "故宫" },
+        { "id": 7, "imgUrl": "/api/img/icon6.png", "title": "茶馆相声" },
+        { "id": 8, "imgUrl": "/api/img/icon7.png", "title": "踏青赏花" },
+        { "id": 9, "imgUrl": "/api/img/icon8.png", "title": "泡温泉" },
+        { "id": 10, "imgUrl": "/api/img/icon9.png", "title": "动物植物" }
+      ],
+      "hotList": [
+        { "id": 1, "imgUrl": "/api/img/sights0.jpg", "title": "宋城千古", "price": "￥310" },
+        { "id": 2, "imgUrl": "/api/img/sights1.jpg", "title": "千岛湖", "price": "￥24" },
+        { "id": 3, "imgUrl": "/api/img/sights2.jpg", "title": "西溪国家湿地公园·周家村", "price": "￥46" },
+        { "id": 4, "imgUrl": "/api/img/sights3.jpg", "title": "灵隐寺", "price": "￥45" },
+        { "id": 5, "imgUrl": "/api/img/sights4.jpg", "title": "杭州乐园", "price": "￥160" },
+        { "id": 6, "imgUrl": "/api/img/sights5.jpg", "title": "杭州动物园", "price": "￥20" },
+        { "id": 7, "imgUrl": "/api/img/sights6.jpg", "title": "西溪国家湿地公园", "price": "￥40" },
+        { "id": 8, "imgUrl": "/api/img/sights7.jpg", "title": "杭州野生动物世界", "price": "￥210" },
+        { "id": 9, "imgUrl": "/api/img/sights8.jpg", "title": "杭州飞来峰", "price": "￥45" }
+      ]
+    },
+    {
+      "city": "上海"
+    }
+  ]
+}

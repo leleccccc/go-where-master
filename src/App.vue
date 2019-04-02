@@ -13,6 +13,6 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="stylus">
+// @import './assets/styles/var.styl'
 </style>

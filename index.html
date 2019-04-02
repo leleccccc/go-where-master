@@ -8,5 +8,13 @@
   <body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <script>
+      var designWidth = 750,
+        ratio = 100;
+      document.documentElement.style.fontSize = ((window.innerWidth / designWidth) * ratio) + 'px';
+      window.onresize = function() {
+        document.documentElement.style.fontSize = ((window.innerWidth / designWidth) * ratio) + 'px';
+      }
+    </script>
   </body>
 </html>
