@@ -2,10 +2,10 @@
   <div class="location border-top">
     <div class="border-right">
       <!-- span换行会有空白 -->
-      <span class="iconfont">&#xe63f;</span>&thinsp;<span class="option">定位失败</span>
+      <i class="iconfont">&#xe63f;</i>&thinsp;<span class="option">定位失败</span>
     </div>
     <div>
-      <span class="iconfont">&#xe611;</span>&thinsp;<span class="option">必游榜单</span>
+      <i class="iconfont">&#xe611;</i>&thinsp;<span class="option">必游榜单</span>
     </div>
   </div>
 </template>

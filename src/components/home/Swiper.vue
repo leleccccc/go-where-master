@@ -29,8 +29,15 @@ export default{
         pagination: {
           el: '.swiper-pagination'
         },
-        // loop: true // 循环模式选项  在使用4.x版本的Swiper设置自动播放需要去掉loop:true，使用autoplay: true设置自动播放
-        autoplay: true // 可选选项，自动滑动
+        observer: true, // 修改swiper自己或子元素时，自动初始化swiper
+        observeParents: true, // 修改swiper的父元素时，自动初始化swiper
+        // disableOnInteraction: false, // 用户操作swiper之后，是否禁止autoplay
+        // loop: true, // 图片循环模式选项  在使用4.x版本的Swiper设置自动播放需要去掉loop:true，使用autoplay: true设置自动播放
+        // autoplay: true // 可选选项，自动滑动
+        autoplay: {
+          delay: 3000
+          // disableOnInteraction: false
+        }
       }
       // swiperList: [
       //   { id: 1, imgUrl: require('@/assets/img/swiper0.jpg') },

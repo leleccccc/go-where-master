@@ -1,7 +1,8 @@
 {
+  "comment": "2019.4.3截止数据接口",
   "data": [
     {
-      "city": "北京",
+      "city": "杭州",
       "swiperList": [
         { "id": 1, "imgUrl": "/api/img/swiper0.jpg" },
         { "id": 2, "imgUrl":" /api/img/swiper1.jpg" },
@@ -15,14 +16,14 @@
       "iconsList": [
         { "id": 1, "imgUrl": "/api/img/icon0.png", "title": "景点门票" },
         { "id": 2, "imgUrl": "/api/img/icon1.png", "title": "一日游" },
-        { "id": 3, "imgUrl": "/api/img/icon2.png", "title": "北京必游" },
-        { "id": 4, "imgUrl": "/api/img/icon3.png", "title": "溜娃儿" },
-        { "id": 5, "imgUrl": "/api/img/icon4.png", "title": "爬长城" },
-        { "id": 6, "imgUrl": "/api/img/icon5.png", "title": "故宫" },
-        { "id": 7, "imgUrl": "/api/img/icon6.png", "title": "茶馆相声" },
-        { "id": 8, "imgUrl": "/api/img/icon7.png", "title": "踏青赏花" },
-        { "id": 9, "imgUrl": "/api/img/icon8.png", "title": "泡温泉" },
-        { "id": 10, "imgUrl": "/api/img/icon9.png", "title": "动物植物" }
+        { "id": 3, "imgUrl": "/api/img/icon2.png", "title": "杭州必游" },
+        { "id": 4, "imgUrl": "/api/img/icon3.png", "title": "踏青赏花" },
+        { "id": 5, "imgUrl": "/api/img/icon4.png", "title": "印象西湖" },
+        { "id": 6, "imgUrl": "/api/img/icon5.png", "title": "千岛湖" },
+        { "id": 7, "imgUrl": "/api/img/icon6.png", "title": "溜娃儿" },
+        { "id": 8, "imgUrl": "/api/img/icon7.png", "title": "西溪湿地" },
+        { "id": 9, "imgUrl": "/api/img/icon8.png", "title": "杭州宋城" },
+        { "id": 10, "imgUrl": "/api/img/icon9.png", "title": "杭州乐园" }
       ],
       "hotList": [
         { "id": 1, "imgUrl": "/api/img/sights0.jpg", "title": "宋城千古", "price": "￥310" },
@@ -34,10 +35,44 @@
         { "id": 7, "imgUrl": "/api/img/sights6.jpg", "title": "西溪国家湿地公园", "price": "￥40" },
         { "id": 8, "imgUrl": "/api/img/sights7.jpg", "title": "杭州野生动物世界", "price": "￥210" },
         { "id": 9, "imgUrl": "/api/img/sights8.jpg", "title": "杭州飞来峰", "price": "￥45" }
+      ],
+      "likeList": [
+        { "id": 1, "imgUrl": "/api/img/like0.jpg", "title": "西溪国家湿地公园·周家村", "score": 5.0, "evaluation": 15932, "price": 460, "place": "西湖区" , "description": "美若仙境，《非诚勿扰》取景地" },
+        { "id": 2, "imgUrl": "/api/img/like1.jpg", "title": "浙西大峡谷", "score": 4.0, "evaluation": 1711, "price": 124.8, "place": "临安市" , "description": "" },
+        { "id": 3, "imgUrl": "/api/img/like2.jpg", "title": "杭州乐园", "score": 3.0, "evaluation": 5899, "price": 160, "place": "萧山区" , "description": "" },
+        { "id": 4, "imgUrl": "/api/img/like3.jpg", "title": "富阳永安山滑翔基地", "score": 5.0, "evaluation": 313, "price": 660, "place": "富阳市" , "description": "" },
+        { "id": 5, "imgUrl": "/api/img/like4.jpg", "title": "宋城千古情", "score": 5.0, "evaluation": 18640, "price": 290, "place": "西湖区" , "description": "世界三大名秀之一，杭州宋城的灵魂" },
+        { "id": 6, "imgUrl": "/api/img/like5.jpg", "title": "杭州野生动物世界", "score": 5.0, "evaluation": 7435, "price": 210, "place": "富阳市" , "description": "" },
+        { "id": 7, "imgUrl": "/api/img/like6.jpg", "title": "杭州云曼温泉", "score": 5.0, "evaluation": 1281, "price": 128, "place": "萧山区" , "description": "" },
+        { "id": 8, "imgUrl": "/api/img/like7.jpg", "title": "杭州烂苹果乐园", "score": 5.0, "evaluation": 7052, "price": 140, "place": "萧山区" , "description": "" },
+        { "id": 9, "imgUrl": "/api/img/like8.jpg", "title": "千岛湖", "score": 5.0, "evaluation": 9195, "price": 24, "place": "淳安县" , "description": "这里特别受欢迎呦(๑‾ ꇴ ‾๑)" },
+        { "id": 10, "imgUrl": "/api/img/like9.jpg", "title": "瑶琳仙境", "score": 5.0, "evaluation": 2268, "price": 220, "place": "桐庐县" , "description": "别光抬头看景，潺潺清泉里倒影更迷人" },
+        { "id": 11, "imgUrl": "/api/img/like10.jpg", "title": "杭州海底世界", "score": 5.0, "evaluation": 3839, "price": 115, "place": "西湖区" , "description": "" },
+        { "id": 12, "imgUrl": "/api/img/like11.jpg", "title": "印象西湖", "score": 5.0, "evaluation": 4913, "price": 324, "place": "西湖" , "description": "" },
+        { "id": 13, "imgUrl": "/api/img/like12.jpg", "title": "新叶古城", "score": 5.0, "evaluation": 714, "price": 59, "place": "建德市" , "description": "到一个历史悠久、民风淳朴的古村放松心灵" },
+        { "id": 14, "imgUrl": "/api/img/like13.jpg", "title": "大明山", "score": 5.0, "evaluation": 3676, "price": 84.8, "place": "临安市" , "description": "" },
+        { "id": 15, "imgUrl": "/api/img/like14.jpg", "title": "千岛湖森林氧吧", "score": 5.0, "evaluation": 2099, "price": 40, "place": "千岛湖" , "description": "" },
+        { "id": 16, "imgUrl": "/api/img/like15.jpg", "title": "天目山", "score": 5.0, "evaluation": 955, "price": 34, "place": "临安市" , "description": "" },
+        { "id": 17, "imgUrl": "/api/img/like16.jpg", "title": "钱塘江夜游", "score": 5.0, "evaluation": 693, "price": 90, "place": "京杭大运河" , "description": "感受“月到天心处，风来水面时”的惬意" },
+        { "id": 18, "imgUrl": "/api/img/like17.jpg", "title": "山沟沟", "score": 5.0, "evaluation": 770, "price": 77.5, "place": "余杭区" , "description": "" },
+        { "id": 19, "imgUrl": "/api/img/like18.jpg", "title": "龙门古镇", "score": 5.0, "evaluation": 1210, "price": 60, "place": "富阳市" , "description": "" },
+        { "id": 20, "imgUrl": "/api/img/like19.jpg", "title": "临安湍口众安氡温泉", "score": 5.0, "evaluation": 940, "price": 196, "place": "临安市" , "description": "🔥好评如潮，小伙伴热推景点~" },
+        { "id": 21, "imgUrl": "/api/img/like20.jpg", "title": "杭州江和美海洋公园", "score": 5.0, "evaluation": 365, "price": 100, "place": "杭州" , "description": "" },
+        { "id": 22, "imgUrl": "/api/img/like21.jpg", "title": "杭州极地海洋世界", "score": 5.0, "evaluation": 1914, "price": 1.3, "place": "萧山区" , "description": "模拟生态环境里与海洋动物亲密接触" },
+        { "id": 23, "imgUrl": "/api/img/like22.jpg", "title": "大象山国家森林公园", "score": 5.0, "evaluation": 1445, "price": 57.1, "place": "桐庐县" , "description": "" },
+        { "id": 24, "imgUrl": "/api/img/like23.jpg", "title": "太湖源", "score": 5.0, "evaluation": 1669, "price": 42, "place": "临安市" , "description": "太湖水系源头之一，人称“小九寨沟”" },
+        { "id": 25, "imgUrl": "/api/img/like24.jpg", "title": "杭州国际博览中心（G20峰会体验馆）", "score": 5.0, "evaluation": 1196, "price": 90, "place": "萧山区" , "description": "这里最近很火哦，好多人都在点评它呢！" }
+      ],
+      "goWhereList":[
+        { "id": 1, "imgUrl": "/api/img/where0.jpg", "title": "美丽普陀山", "description": "人间仙境杭州，佛教圣地普陀山等你来玩！在这里静心接收佛家的洗礼，用心感受佛文化" },
+        { "id": 2, "imgUrl": "/api/img/where1.jpg", "title": "杭州必打卡", "description": "杭州，前世今生与你有一场美丽约会" },
+        { "id": 3, "imgUrl": "/api/img/where2.jpg", "title": "承载杭城的历史之地", "description": "饱经沧桑的地方诉述着这座城的段段衷肠" },
+        { "id": 4, "imgUrl": "/api/img/where3.jpg", "title": "杭州多样乐园", "description": "这个周末终于可以陪宝贝去玩耍啦" },
+        { "id": 5, "imgUrl": "/api/img/where4.jpg", "title": "花开正当时", "description": "阳春三月，恰是赏花好时节" }
       ]
     },
     {
-      "city": "上海"
+      "city": "宁波"
     }
   ]
 }

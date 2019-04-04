@@ -1,13 +1,13 @@
 <template>
   <div class="header">
     <div class="header-left">
-      <span class="iconfont">&#xe624;</span>
+      <i class="iconfont">&#xe624;</i>
     </div>
     <div class="header-search">
-      <span class="iconfont">&#xe632;输入城市/景点/游玩主题</span>
+      <i class="iconfont">&#xe632;输入城市/景点/游玩主题</i>
     </div>
     <div class="header-right">
-      <span class="iconfont">北京&#xe600;</span>
+      <i class="iconfont">杭州&#xe600;</i>
     </div>
   </div>
 </template>

@@ -20,7 +20,7 @@ import 'swiper/dist/css/swiper.css'
 Vue.use(VueAwesomeSwiper)
 
 // axios
-import axios from 'axios'
+import axios from 'axios'    // eslint-disable-line
 Vue.prototype.$http = axios
 
 /* eslint-disable no-new */

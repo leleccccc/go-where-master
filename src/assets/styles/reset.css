@@ -56,8 +56,11 @@ table {
 html {
 	font-size: 100px;
 	background: #f5f5f5;
-	/* 由于浏览器必须要在执行事件处理函数之后，才能知道有没有掉用过 preventDefault() ，这就导致了浏览器不能及时响应滚动，略有延迟。 */
-	touch-action: none;
+	/* 由于浏览器必须要在执行事件处理函
+	数之后，才能知道有没有
+	掉用过 preventDefault() ，这就导致
+	了浏览器不能及时响应滚动，略有延迟。设置后页面不能点击滚动 */
+	/* touch-action: none; */
 }
 
 a {
@@ -92,4 +95,15 @@ a {
 	border-right: 0.01rem solid #000;
 	transform: rotate(45deg);
 	vertical-align: 10%;
+}
+
+/* 下分界线 */
+.border-bottom::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 0.02rem;
+	border-bottom: 0.02rem solid #ccc;
+	left: 0;
+	bottom: 0;
 }

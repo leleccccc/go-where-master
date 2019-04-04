@@ -6,6 +6,9 @@
     <home-location></home-location>
     <home-activity></home-activity>
     <home-hot-list :hotList="hotList"></home-hot-list>
+    <home-like :likeList="likeList"></home-like>
+    <home-go-where :goWhereList="goWhereList"></home-go-where>
+    <home-footer></home-footer>
   </div>
 </template>
 
@@ -16,6 +19,9 @@ import HomeIcons from '@/components/home/Icons'
 import HomeLocation from '@/components/home/Location'
 import HomeActivity from '@/components/home/Activity'
 import HomeHotList from '@/components/home/HotList'
+import HomeLike from '@/components/home/Like'
+import HomeGoWhere from '@/components/home/GoWhere'
+import HomeFooter from '@/components/home/Footer'
 
 export default {
   name: 'HomeView',
@@ -25,13 +31,18 @@ export default {
     HomeIcons,
     HomeLocation,
     HomeActivity,
-    HomeHotList
+    HomeHotList,
+    HomeLike,
+    HomeGoWhere,
+    HomeFooter
   },
   data () {
     return {
       swiperList: [],
       iconsList: [],
-      hotList: []
+      hotList: [],
+      likeList: [],
+      goWhereList: []
     }
   },
   mounted () {
@@ -42,6 +53,8 @@ export default {
         this.swiperList = data.swiperList
         this.iconsList = data.iconsList
         this.hotList = data.hotList
+        this.likeList = data.likeList
+        this.goWhereList = data.goWhereList
       })
   }
 }

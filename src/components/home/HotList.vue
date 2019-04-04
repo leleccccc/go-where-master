@@ -42,7 +42,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-// @import '~@/assets/styles/var.styl';
+@import '~@/assets/styles/var.styl';
 
 .hot-list
   width: 100%;
@@ -84,7 +84,7 @@ ul
       overflow: hidden;
       text-overflow: ellipsis;
     span:nth-child(3)
-      color: #ff8300;
+      color: $price-color;
   li:first-child
     margin: 0.4rem 0 0 0.3rem;
   li:last-child

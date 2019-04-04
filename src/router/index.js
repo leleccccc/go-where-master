@@ -10,6 +10,11 @@ export default new Router({
       path: '/',
       name: 'HomeView',
       component: resolve => require(['@/views/HomeView'], resolve)
+    },
+    {
+      path: '/CityView',
+      name: 'CityView',
+      component: resolve => require(['@/views/CityView'], resolve)
     }
   ]
 })

@@ -38,3 +38,23 @@
 .icon-diqiu:before {
   content: "\e611";
 }
+
+.icon-ticket:before {
+  content: "\e63e";
+}
+
+.icon-jiudian:before {
+  content: "\e64f";
+}
+
+.icon-gongyu:before {
+  content: "\e692";
+}
+
+.icon-gengduo:before {
+  content: "\e601";
+}
+
+.icon-Group-:before {
+  content: "\e68b";
+}
