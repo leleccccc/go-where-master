@@ -43,8 +43,7 @@ export default {
   components: {
     // MyRate
   },
-  data () {
-    return {
+  methods: {
     // getIndex (index) {
     //   switch (index) {
     //     case index == (0||1||3||4||5||6||8||9||11||13||16||17||18||19||22||23||24):
@@ -60,7 +59,6 @@ export default {
     //     this.refs.tags.style.innerHTML = ''
     //   }
     // }
-    }
   }
 }
 </script>
