@@ -6,9 +6,11 @@
     </div>
     <ul class="like-items">
       <li class="border-bottom" v-for="(item, index) in likeList" :key="index">
+        <!-- 左侧div -->
         <div class="items-img">
           <img :src="item.imgUrl" alt="" />
         </div>
+        <!-- 右侧div -->
         <div class="items-details">
           <p>{{ item.title }}</p>
           <p>
@@ -24,9 +26,11 @@
           </p>
           <p>{{ item.description }}</p>
         </div>
+        <!-- <div class="tags" ref="tags">1</div> -->
       </li>
       <!-- <img src="@/assets/img/tomorrow.png" /> -->
     </ul>
+    <a href="" class="all">查看所有产品</a>
   </div>
 </template>
 
@@ -41,6 +45,21 @@ export default {
   },
   data () {
     return {
+    // getIndex (index) {
+    //   switch (index) {
+    //     case index == (0||1||3||4||5||6||8||9||11||13||16||17||18||19||22||23||24):
+    //     this.refs.tags.style.background = 'url("@/assets/img/now.png")'
+    //     this.refs.tags.style.innerHTML = '随买随用'
+    //     break
+    //     case index == (7||10||12||21):
+    //     this.refs.tags.style.background = 'url("@/assets/img/tomorrow.png")'
+    //     this.refs.tags.style.innerHTML = '可订明日'
+    //     break
+    //     default:
+    //     this.refs.tags.style.background = ''
+    //     this.refs.tags.style.innerHTML = ''
+    //   }
+    // }
     }
   }
 }
@@ -68,10 +87,12 @@ export default {
 ul.like-items
   width: 100%;
   font-size: 0.2rem;
+  li:last-child
+    margin-bottom: 0;
   li
     position: relative;
     width: 100%;
-    height: 3rem;
+    // height: 3rem;
     margin-bottom: 0.2rem;
     .items-img
       float: left;
@@ -81,11 +102,14 @@ ul.like-items
         height: 2rem;
         vertical-align: middle;  // 去除div包裹图片的白底
     .items-details
-      height: 3rem;
+      // height: 3rem;
       overflow: hidden;
       p:nth-child(1)
         margin: 0.3rem 0 0 0.2rem;
         font-size: 0.32rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       p:nth-child(2)
         margin: 0.4rem 0 0 1.8rem;
         font-size: 0.2rem;
@@ -106,7 +130,27 @@ ul.like-items
           right: 0.2rem;
           top: 0.2rem;
       p:nth-child(4)
-        margin: 0.3rem 0 0 0.2rem;
+        margin: 0.3rem 0 0.3rem 0.2rem;
         color: #f55;
         background: #fff9f9;
+
+.all
+  // display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 0.8rem;
+  background: #fff;
+  // text-align: center;
+  // line-height: 0.25rem;  // 垂直居中？？？
+  color: #00afc7;
+  font-size: 0.3rem;
+
+.tags
+  width: 0.9rem;
+  height: 0.3rem;
+  position: absolute;
+  left: 0.2rem;
+  top: 0;
 </style>
