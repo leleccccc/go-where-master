@@ -7,7 +7,7 @@
       <div class="right-arrow"></div>
     </div>
     <ul>
-      <li v-for="(item, index) in hotList" :key="index">
+      <li v-for="item in hotList" :key="item.id">
         <img :src="item.imgUrl" alt="" />
         <p>{{ item.title }}</p>
         <span>{{ item.price }}</span><span>起</span>
@@ -60,8 +60,8 @@ export default {
     font-weight: bold;
     vertical-align: 10%;
   span:nth-child(3)
-    margin-left: 2.9rem;
-    vertical-align: 20%;
+    margin-left: 2.6rem;
+    // vertical-align: 10%;
 
 ul
   width: 100%;
@@ -81,8 +81,9 @@ ul
     img
       width: 100%;
     p:nth-child(2)
-      overflow: hidden;
-      text-overflow: ellipsis;
+      // overflow: hidden;
+      // text-overflow: ellipsis;
+      textOverflow();
     span:nth-child(3)
       color: $price-color;
   li:first-child

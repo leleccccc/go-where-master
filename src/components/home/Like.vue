@@ -5,7 +5,7 @@
       <span>猜你喜欢</span>
     </div>
     <ul class="like-items">
-      <li class="border-bottom" v-for="(item, index) in likeList" :key="index">
+      <li class="border-bottom" v-for="item in likeList" :key="item.id">
         <!-- 左侧div -->
         <div class="items-img">
           <img :src="item.imgUrl" alt="" />

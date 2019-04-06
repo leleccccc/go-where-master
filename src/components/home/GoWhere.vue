@@ -2,7 +2,7 @@
   <div class="go-where">
     <div>周末去哪儿</div>
     <ul>
-      <li v-for="(item, index) in goWhereList" :key="index">
+      <li v-for="item in goWhereList" :key="item.id">
         <img :src="item.imgUrl" alt="" />
         <p>{{ item.title }}</p>
         <p>{{ item.description }}</p>
@@ -19,6 +19,8 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+@import '~@/assets/styles/var.styl'
+
 .go-where
   width: 100%;
   background: #fff;
@@ -41,7 +43,8 @@ export default {
       margin: 0.2rem 0 0 0.2rem;
       font-size: 0.22rem;
       color: #616161;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      // white-space: nowrap;
+      // overflow: hidden;
+      // text-overflow: ellipsis;
+      textOverflow();
 </style>

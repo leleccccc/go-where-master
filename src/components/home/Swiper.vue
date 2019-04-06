@@ -2,7 +2,7 @@
   <div class="header-swiper">
     <swiper :options="swiperOption">
     <!-- slides -->
-    <swiper-slide v-for="(item, index) in swiperList" :key="index">
+    <swiper-slide v-for="item in swiperList" :key="item.id">
       <img :src="item.imgUrl" alt="" />
     </swiper-slide>
     <!-- 如果需要分页器 -->

@@ -20,8 +20,8 @@ export default {
       this.$router.go(-1)
     },
     goCityView () {
-      this.$router.push('/CityView')
-      // this.$router.push({name: 'CityView'})
+      // this.$router.push('/CityView')
+      this.$router.push({name: 'CityView'})
       // this.$router.push({path: '/CityView'})
       // this.$router.replace('/CityView')
     }
