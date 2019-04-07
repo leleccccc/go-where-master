@@ -1,49 +1,80 @@
 <template>
-  <div>
-    <!-- 热门城市 -->
-    <div class="city">
-      <div>热门城市</div>
-      <ul>
-        <li v-for="item in hotCityList" :key="item.id">
-          <a href="">{{ item.city }}</a>
-        </li>
-      </ul>
-    </div>
-    <!-- 字母排序 -->
-    <div class="sort">
-      <div>字母排序</div>
-      <div>
+  <!-- better-scroll插件需要2层div嵌套 -->
+  <div ref="container" class="container">
+    <div class="content">
+      <!-- 热门城市 -->
+      <div class="city">
+        <div>热门城市</div>
         <ul>
-          <li v-for="(item, key) in allCityList" :key="item.id">
-            {{ key }}
+          <li v-for="item in hotCityList" :key="item.id">
+            <a href="">{{ item.city }}</a>
           </li>
         </ul>
       </div>
-    </div>
-    <!-- A-Z排序 -->
-    <div class="all-city-list">
-      <div class="city-item" v-for="(item, key) in allCityList" :key="key">
-        <div>{{ key }}</div>
-        <ul>
-          <li v-for="val in item" :key="val.id">
-            <a href="">{{ val.city }}</a>
-          </li>
-        </ul>
+      <!-- 字母排序 -->
+      <div class="sort">
+        <div>字母排序</div>
+        <div>
+          <ul>
+            <li v-for="(item, key) in allCityList" :key="item.id" @click="searchSort(key)">
+              {{ key }}
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- A-Z排序 -->
+      <div class="all-city-list">
+        <div class="city-item" v-for="(item, key) in allCityList" :key="key" :ref="key">
+          <div>{{ key }}</div>
+          <ul>
+            <li v-for="val in item" :key="val.id">
+              <a href="">{{ val.city }}</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import BScroll from 'better-scroll'
+
 export default {
   name: 'CityContent',
-  props: ['hotCityList', 'allCityList']
+  props: ['hotCityList', 'allCityList'],
+  data () {
+    return {
+      scroll: ''
+    }
+  },
+  mounted () {
+    // console.log(this.$refs['container'])
+    let container = this.$refs['container']
+    this.scroll = new BScroll(container)
+  },
+  methods: {
+    searchSort (sortCityName) {
+      // console.log(sortCityName)
+      // console.log(this.$refs[sortCityName][0])
+      this.scroll.scrollToElement(this.$refs[sortCityName][0])
+    }
+  }
 }
 </script>
 
 <style lang="stylus" scoped>
 @import "~@/assets/styles/var.styl"
 
+.container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 1.48rem;
+  overflow: hidden;
+  // z-index: 1;
+}
 // 热门城市
 .city
   div
