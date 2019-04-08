@@ -87,9 +87,9 @@ ul
     span:nth-child(3)
       color: $price-color;
   li:first-child
-    margin: 0.4rem 0 0 0.3rem;
-  li:last-child
-    margin: 0.4rem 0.4rem 0 0.15rem;
+    margin-left: 0.3rem;
+  li:nth-child(10)
+    margin-right: 0.4rem;
 
 // 榜单1、2、3图片样式
 .top1

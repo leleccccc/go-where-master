@@ -34,7 +34,8 @@
         { "id": 6, "imgUrl": "/api/img/sights5.jpg", "title": "杭州动物园", "price": "￥20" },
         { "id": 7, "imgUrl": "/api/img/sights6.jpg", "title": "西溪国家湿地公园", "price": "￥40" },
         { "id": 8, "imgUrl": "/api/img/sights7.jpg", "title": "杭州野生动物世界", "price": "￥210" },
-        { "id": 9, "imgUrl": "/api/img/sights8.jpg", "title": "杭州飞来峰", "price": "￥45" }
+        { "id": 9, "imgUrl": "/api/img/sights8.jpg", "title": "杭州飞来峰", "price": "￥45" },
+        { "id": 12, "imgUrl": "/api/img/sights9.jpg", "title": "印象西湖", "price": "￥340" }
       ],
       "likeList": [
         { "id": 1, "imgUrl": "/api/img/like0.jpg", "title": "西溪国家湿地公园·周家村", "score": 5.0, "evaluation": 15932, "price": 460, "place": "西湖区" , "description": "美若仙境，《非诚勿扰》取景地" },

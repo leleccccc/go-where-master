@@ -23,10 +23,14 @@ Vue.use(VueAwesomeSwiper)
 import axios from 'axios'    // eslint-disable-line
 Vue.prototype.$http = axios
 
+// vuex,默认路径store文件下的index.js
+import store from './store' // eslint-disable-line
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

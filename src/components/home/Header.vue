@@ -7,12 +7,15 @@
       <i class="iconfont">&#xe632;输入城市/景点/游玩主题</i>
     </div>
     <div class="header-right" @click="goCityView">
-      <i class="iconfont">杭州&#xe600;</i>
+      <div>{{ city }}</div>
+      <i class="iconfont">&#xe600;</i>
     </div>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   name: 'HomeHeader',
   methods: {
@@ -25,6 +28,9 @@ export default {
       // this.$router.push({path: '/CityView'})
       // this.$router.replace('/CityView')
     }
+  },
+  computed: {
+    ...mapState(['city'])
   }
 }
 </script>
@@ -43,7 +49,6 @@ export default {
     padding: 0 0.2rem;
     text-align: center;
     font-weight: bold;
-    cursor: pointer;
   .header-search
     flex: 1;
     background: #fff;
@@ -55,9 +60,13 @@ export default {
     font-size: 0.2rem;
     padding-left: 0.2rem;
   .header-right
-    font-size: 0.2rem;
+    display: flex;
+    max-width: 1.5rem;
+    font-size: 0.28rem;
     padding: 0 0.2rem;
-    cursor: pointer;
+    // div
+    //   max-width: 1.5rem;
+    //   overflow: hidden;
 
 .iconfont
   font-size: 0.3rem;
