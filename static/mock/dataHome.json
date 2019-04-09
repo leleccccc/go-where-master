@@ -73,7 +73,75 @@
       ]
     },
     {
-      "city": "宁波"
+      "city": "北京",
+      "swiperList": [
+        { "id": 1, "imgUrl": "/api/img/swiper0.jpg" },
+        { "id": 2, "imgUrl":" /api/img/swiper1.jpg" },
+        { "id": 3, "imgUrl": "/api/img/swiper2.jpg" },
+        { "id": 4, "imgUrl": "/api/img/swiper3.jpg" },
+        { "id": 5, "imgUrl": "/api/img/swiper4.jpg" },
+        { "id": 6, "imgUrl": "/api/img/swiper5.jpg" },
+        { "id": 7, "imgUrl": "/api/img/swiper6.jpg" },
+        { "id": 8, "imgUrl": "/api/img/swiper7.jpg" }
+      ],
+      "iconsList": [
+        { "id": 1, "imgUrl": "/api/img/icon0.png", "title": "景点门票" },
+        { "id": 2, "imgUrl": "/api/img/icon1.png", "title": "北京一日游" },
+        { "id": 3, "imgUrl": "/api/img/icon2.png", "title": "北京必游" },
+        { "id": 4, "imgUrl": "/api/img/icon6.png", "title": "溜娃儿" },
+        { "id": 5, "imgUrl": "/api/img/beijing-icon4.png", "title": "爬长城" },
+        { "id": 6, "imgUrl": "/api/img/beijing-icon5.png", "title": "故宫" },
+        { "id": 7, "imgUrl": "/api/img/beijing-icon6.png", "title": "北京欢乐谷" },
+        { "id": 8, "imgUrl": "/api/img/beijing-icon7.png", "title": "京城赏花" },
+        { "id": 9, "imgUrl": "/api/img/beijing-icon8.png", "title": "世界公园" },
+        { "id": 10, "imgUrl": "/api/img/beijing-icon9.png", "title": "动植物园" }
+      ],
+      "hotList": [
+        { "id": 1, "imgUrl": "/api/img/beijing-sights0.jpg", "title": "故宫", "price": "￥60" },
+        { "id": 2, "imgUrl": "/api/img/beijing-sights1.jpg", "title": "八达岭长城", "price": "￥180" },
+        { "id": 3, "imgUrl": "/api/img/beijing-sights2.jpg", "title": "什刹海", "price": "￥10" },
+        { "id": 4, "imgUrl": "/api/img/beijing-sights3.jpg", "title": "颐和园", "price": "￥38" },
+        { "id": 5, "imgUrl": "/api/img/beijing-sights4.jpg", "title": "鸟巢", "price": "￥372" },
+        { "id": 6, "imgUrl": "/api/img/beijing-sights5.jpg", "title": "水立方", "price": "￥49" },
+        { "id": 7, "imgUrl": "/api/img/beijing-sights6.jpg", "title": "圆明园", "price": "￥160" },
+        { "id": 8, "imgUrl": "/api/img/beijing-sights7.jpg", "title": "杭州野生动物世界", "price": "￥58" },
+        { "id": 9, "imgUrl": "/api/img/beijing-sights8.jpg", "title": "杭州飞来峰", "price": "￥122" },
+        { "id": 12, "imgUrl": "/api/img/beijing-sights9.jpg", "title": "印象西湖", "price": "￥180" }
+      ],
+      "likeList": [
+        { "id": 1, "imgUrl": "/api/img/beijing-like0.jpg", "title": "世界花卉大观园", "score": 5.0, "evaluation": 5238, "price": 45, "place": "丰台区" , "description": "" },
+        { "id": 2, "imgUrl": "/api/img/beijing-like1.jpg", "title": "八达岭长城", "score": 4.0, "evaluation": 47607, "price": 180, "place": "延庆县" , "description": "不到长城非好汉" },
+        { "id": 3, "imgUrl": "/api/img/beijing-like2.jpg", "title": "故宫", "score": 3.0, "evaluation": 379467, "price": 60, "place": "东城区" , "description": "世界五大宫之首，穿越与您近在咫尺" },
+        { "id": 4, "imgUrl": "/api/img/beijing-like3.jpg", "title": "古北水镇", "score": 5.0, "evaluation": 9282, "price": 140, "place": "密云县" , "description": "" },
+        { "id": 5, "imgUrl": "/api/img/beijing-like4.jpg", "title": "北京欢乐谷", "score": 5.0, "evaluation": 68373, "price": 180, "place": "朝阳区" , "description": "亚洲唯一飞行式过山车等你来挑战" },
+        { "id": 6, "imgUrl": "/api/img/beijing-like5.jpg", "title": "颐和园", "score": 5.0, "evaluation": 40524, "price": 38, "place": "海淀区" , "description": "中国现存最大的皇家园林" },
+        { "id": 7, "imgUrl": "/api/img/beijing-like6.jpg", "title": "鸟巢", "score": 5.0, "evaluation": 5631, "price": 372, "place": "奥林匹克..." , "description": "" },
+        { "id": 8, "imgUrl": "/api/img/beijing-like7.jpg", "title": "北京野生动物园", "score": 5.0, "evaluation": 19224, "price": 122, "place": "大兴区" , "description": "敢与森林之王近距离接触吗？" },
+        { "id": 9, "imgUrl": "/api/img/beijing-like8.jpg", "title": "什刹海", "score": 5.0, "evaluation": 3413, "price": 10, "place": "西城区" , "description": "" },
+        { "id": 10, "imgUrl": "/api/img/beijing-like9.jpg", "title": "北京动物园", "score": 5.0, "evaluation": 7353, "price": 170, "place": "西城区" , "description": "" },
+        { "id": 11, "imgUrl": "/api/img/beijing-like10.jpg", "title": "京东石林峡", "score": 5.0, "evaluation": 2258, "price": 58, "place": "平谷区" , "description": "谷内山峰挺立峭拔，天上美景落人间" },
+        { "id": 12, "imgUrl": "/api/img/beijing-like11.jpg", "title": "北京海洋馆", "score": 5.0, "evaluation": 5231, "price": 170, "place": "西城区" , "description": "" },
+        { "id": 13, "imgUrl": "/api/img/beijing-like12.jpg", "title": "太平洋海底世界", "score": 5.0, "evaluation": 3485, "price": 78.01, "place": "海淀区" , "description": "漫步海底，欣赏五彩缤纷的海底生物" },
+        { "id": 14, "imgUrl": "/api/img/beijing-like13.jpg", "title": "恭王府", "score": 5.0, "evaluation": 33479, "price": 45, "place": "西城区" , "description": "一座恭王府，半部清代史" },
+        { "id": 15, "imgUrl": "/api/img/beijing-like14.jpg", "title": "富国海底世界", "score": 5.0, "evaluation": 4085, "price": 78, "place": "朝阳区" , "description": "" },
+        { "id": 16, "imgUrl": "/api/img/beijing-like15.jpg", "title": "世界公园", "score": 5.0, "evaluation": 6027, "price": 95, "place": "丰台区" , "description": "40个国家的109处著名古迹名胜微缩景点" },
+        { "id": 17, "imgUrl": "/api/img/beijing-like16.jpg", "title": "金海湖风景区", "score": 5.0, "evaluation": 2030, "price": 33, "place": "平谷区" , "description": "" },
+        { "id": 18, "imgUrl": "/api/img/beijing-like17.jpg", "title": "玉渊潭公园", "score": 5.0, "evaluation": 1021, "price": 69, "place": "海淀区" , "description": "" },
+        { "id": 19, "imgUrl": "/api/img/beijing-like18.jpg", "title": "南宫温泉水世界", "score": 5.0, "evaluation": 1939, "price": 57, "place": "南宫旅游..." , "description": "温泉与水世界，沐浴与戏水的有趣结合" },
+        { "id": 20, "imgUrl": "/api/img/beijing-like19.jpg", "title": "呀路古热带植物园", "score": 5.0, "evaluation": 1839, "price": 57, "place": "大兴区" , "description": "" },
+        { "id": 21, "imgUrl": "/api/img/beijing-like20.jpg", "title": "北京活的3D博物馆", "score": 5.0, "evaluation": 750, "price": 35, "place": "朝阳区" , "description": "" },
+        { "id": 22, "imgUrl": "/api/img/beijing-like21.jpg", "title": "大运河绿岛公园", "score": 5.0, "evaluation": 26, "price": 99, "place": "大运河森..." , "description": "通州大型娱乐场所" },
+        { "id": 23, "imgUrl": "/api/img/beijing-like22.jpg", "title": "八达岭野生动物园", "score": 5.0, "evaluation": 4217, "price": 80, "place": "延庆县" , "description": "" },
+        { "id": 24, "imgUrl": "/api/img/beijing-like23.jpg", "title": "北京园博园", "score": 5.0, "evaluation": 3306, "price": 18, "place": "丰台区" , "description": "" },
+        { "id": 25, "imgUrl": "/api/img/beijing-like24.jpg", "title": "温都水城", "score": 5.0, "evaluation": 1476, "price": 49, "place": "昌平区" , "description": "温泉健康养生，畅享水上嘉年华" }
+      ],
+      "goWhereList":[
+        { "id": 1, "imgUrl": "/api/img/beijing-where0.jpg", "title": "北京赏花好地方", "description": "乱花渐欲迷人眼，京城赏花大搜索" },
+        { "id": 2, "imgUrl": "/api/img/beijing-where1.jpg", "title": "京城周末撒欢", "description": "在帝都过周末，不仅仅是城中游！" },
+        { "id": 3, "imgUrl": "/api/img/beijing-where2.jpg", "title": "京城溜娃必去", "description": "德智体美劳全面发展的亲子日，这些地方该去看看…" },
+        { "id": 4, "imgUrl": "/api/img/beijing-where3.jpg", "title": "帝都必打卡", "description": "来北京必去的景点非这些地方莫属" },
+        { "id": 5, "imgUrl": "/api/img/beijing-where4.jpg", "title": "寻找北京的皇城范儿", "description": "数百年的宫廷庙宇，至今依旧威严霸气" }
+      ]
     }
   ]
 }
