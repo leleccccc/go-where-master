@@ -9,6 +9,7 @@
     <home-like :likeList="likeList"></home-like>
     <home-go-where :goWhereList="goWhereList"></home-go-where>
     <home-footer></home-footer>
+    <home-ad></home-ad>
   </div>
 </template>
 
@@ -23,6 +24,7 @@ import HomeHotList from '@/components/home/HotList'
 import HomeLike from '@/components/home/Like'
 import HomeGoWhere from '@/components/home/GoWhere'
 import HomeFooter from '@/components/home/Footer'
+import HomeAd from '@/components/home/Ad'
 
 export default {
   name: 'HomeView',
@@ -35,7 +37,8 @@ export default {
     HomeHotList,
     HomeLike,
     HomeGoWhere,
-    HomeFooter
+    HomeFooter,
+    HomeAd
   },
   data () {
     return {

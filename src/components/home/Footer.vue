@@ -33,6 +33,7 @@ export default {
 
 <style lang="stylus" scoped>
 .footer
+  width: 100%;
   font-size: 0.2rem;
 
 .notice

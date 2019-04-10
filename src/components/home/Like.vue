@@ -67,6 +67,7 @@ export default {
 @import '~@/assets/styles/var.styl';
 
 .like
+  width: 100%;
   background: #fff;
   margin-top: 0.2rem;
 
