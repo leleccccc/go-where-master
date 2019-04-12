@@ -20,6 +20,11 @@ export default new Router({
       path: '/SearchView',
       name: 'SearchView',
       component: resolve => require(['@/views/SearchView'], resolve)
+    },
+    {
+      path: '/DetailView',
+      name: 'DetailView',
+      component: resolve => require(['@/views/DetailView'], resolve)
     }
   ]
 })

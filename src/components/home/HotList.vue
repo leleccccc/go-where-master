@@ -7,7 +7,7 @@
       <div class="right-arrow"></div>
     </div>
     <ul>
-      <li v-for="item in hotList" :key="item.id">
+      <li v-for="(item, index) in hotList" :key="item.id" @click="goDetailView(item,index)">
         <img :src="item.imgUrl" alt="" />
         <p>{{ item.title }}</p>
         <span>{{ item.price }}</span><span>起</span>
@@ -36,6 +36,16 @@ export default {
       //   { id: 8, imgUrl: require('@/assets/img/sights7.jpg'), title: '杭州野生动物世界', price: '￥210' },
       //   { id: 9, imgUrl: require('@/assets/img/sights8.jpg'), title: '杭州飞来峰', price: '￥45' }
       // ]
+    }
+  },
+  methods: {
+    goDetailView (item, index) {
+      this.$router.push({
+        path: '/DetailView',
+        query: {
+          city: item.title
+        }
+      })
     }
   }
 }
@@ -72,7 +82,7 @@ ul
   overflow-y: hidden;
   li
     width: 30%;
-    height: 100%;
+    height: 3rem;
     // float: left;
     display: inline-block;
     margin: 0.4rem 0 0 0.15rem;

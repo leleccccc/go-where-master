@@ -43,7 +43,7 @@ export default {
     position: absolute;
     left: 0;
     top: 0;
-    border-radius: 0 0.2rem 2rem 0;
+    border-radius: 0 0 2rem 0;
     background: #afafaf;
     .cross-1
       width: 0.3rem;
