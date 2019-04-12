@@ -15,6 +15,11 @@ export default new Router({
       path: '/CityView',
       name: 'CityView',
       component: resolve => require(['@/views/CityView'], resolve)
+    },
+    {
+      path: '/SearchView',
+      name: 'SearchView',
+      component: resolve => require(['@/views/SearchView'], resolve)
     }
   ]
 })

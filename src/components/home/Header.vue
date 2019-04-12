@@ -3,7 +3,7 @@
     <div class="header-left" @click="goBack">
       <i class="iconfont">&#xe624;</i>
     </div>
-    <div class="header-search">
+    <div class="header-search" @click="goSearchView">
       <i class="iconfont">&#xe632;输入城市/景点/游玩主题</i>
     </div>
     <div class="header-right" @click="goCityView">
@@ -21,6 +21,9 @@ export default {
   methods: {
     goBack () {
       this.$router.go(-1)
+    },
+    goSearchView () {
+      this.$router.push({path: '/SearchView'})
     },
     goCityView () {
       // this.$router.push('/CityView')
