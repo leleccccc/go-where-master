@@ -4,7 +4,7 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  // mode: 'history',  需要后端配合，否则打包后网页一片空白
   routes: [
     {
       path: '/',

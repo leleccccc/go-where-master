@@ -14,7 +14,7 @@
         <div class="items-details">
           <p>{{ item.title }}</p>
           <p>
-            <!-- <my-rate :score="3.6" disabled showText></my-rate> -->
+            <el-rate v-model="item.score" disabled></el-rate>
             <span>{{ item.evaluation }}</span>
             <span>条评论</span>
           </p>
@@ -35,28 +35,30 @@
 </template>
 
 <script>
-// import MyRate from './Rate'
-
 export default {
   name: 'HomeLike',
   props: ['likeList'],
   components: {
-    // MyRate
+  },
+  data () {
+    return {
+      // value: 4.0
+    }
   },
   methods: {
     // getIndex (index) {
     //   switch (index) {
     //     case index == (0||1||3||4||5||6||8||9||11||13||16||17||18||19||22||23||24):
-    //     this.refs.tags.style.background = 'url("@/assets/img/now.png")'
-    //     this.refs.tags.style.innerHTML = '随买随用'
-    //     break
+    //       this.refs.tags.style.background = 'url("@/assets/img/now.png")'
+    //      this.refs.tags.style.innerHTML = '随买随用'
+    //      break
     //     case index == (7||10||12||21):
-    //     this.refs.tags.style.background = 'url("@/assets/img/tomorrow.png")'
-    //     this.refs.tags.style.innerHTML = '可订明日'
-    //     break
+    //       this.refs.tags.style.background = 'url("@/assets/img/tomorrow.png")'
+    //      this.refs.tags.style.innerHTML = '可订明日'
+    //      break
     //     default:
-    //     this.refs.tags.style.background = ''
-    //     this.refs.tags.style.innerHTML = ''
+    //      this.refs.tags.style.background = ''
+    //      this.refs.tags.style.innerHTML = ''
     //   }
     // }
   }
@@ -91,58 +93,64 @@ ul.like-items
   li
     position: relative;
     width: 100%;
-    // height: 3rem;
     margin-bottom: 0.2rem;
-    .items-img
-      float: left;
-      margin: 0 0 0 0.3rem;
-      img
-        width: 2rem;
-        height: 2rem;
-        vertical-align: middle;  // 去除div包裹图片的白底
-    .items-details
-      // height: 3rem;
-      overflow: hidden;
-      p:nth-child(1)
-        margin: 0.3rem 0 0 0.2rem;
-        font-size: 0.32rem;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      p:nth-child(2)
-        margin: 0.4rem 0 0 1.8rem;
-        font-size: 0.2rem;
-        color: #616161;
-      p:nth-child(3)
-        margin: 0.3rem 0 0 0.2rem;
-        position: relative;
-        span:nth-child(1)
-          color: $price-color;
-        span:nth-child(2)
-          color: $price-color;
-          font-size: 0.5rem;
-        span:nth-child(3)
-           color: #616161;
-        span:nth-child(4)
-          color: #616161;
-          position: absolute;
-          right: 0.2rem;
-          top: 0.2rem;
-      p:nth-child(4)
-        margin: 0.3rem 0 0.3rem 0.2rem;
-        color: #f55;
-        background: #fff9f9;
+
+// 详情左侧div
+.items-img
+  float: left;
+  margin: 0 0 0 0.3rem;
+  img
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;  // 去除div包裹图片的白底
+
+// 详情右侧div
+.items-details
+  overflow: hidden;
+  p:nth-child(1)
+    margin: 0.3rem 0 0 0.2rem;
+    font-size: 0.32rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  p:nth-child(2)
+    margin: 0.4rem 0 0 0;
+    display: flex;
+    align-items: center;
+    font-size: 0.2rem;
+    color: #616161;
+    .el-rate
+      transform: scale(0.7);
+      .el-rate__item
+        margin-left: -0.1rem;
+        background: blue;
+  p:nth-child(3)
+    margin: 0.3rem 0 0 0.2rem;
+    position: relative;
+    span:nth-child(1)
+      color: $price-color;
+    span:nth-child(2)
+      color: $price-color;
+      font-size: 0.5rem;
+    span:nth-child(3)
+      color: #616161;
+    span:nth-child(4)
+      color: #616161;
+      position: absolute;
+      right: 0.2rem;
+      top: 0.2rem;
+  p:nth-child(4)
+    margin: 0.3rem 0 0.3rem 0.2rem;
+    color: #f55;
+    background: #fff9f9;
 
 .all
-  // display: block;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 0.8rem;
   background: #fff;
-  // text-align: center;
-  // line-height: 0.25rem;  // 垂直居中？？？
   color: #00afc7;
   font-size: 0.3rem;
 

@@ -43,7 +43,8 @@ export default {
       this.$router.push({
         path: '/DetailView',
         query: {
-          city: item.title
+          city: item.title,
+          img: item.mainImgUrl
         }
       })
     }

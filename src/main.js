@@ -26,6 +26,10 @@ Vue.prototype.$http = axios
 // vuex,默认路径store文件下的index.js
 import store from './store' // eslint-disable-line
 
+// element-ui
+import { Rate } from 'element-ui' // eslint-disable-line
+Vue.use(Rate)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

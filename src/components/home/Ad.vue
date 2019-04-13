@@ -35,6 +35,7 @@ export default {
   height: 1rem;
   position: fixed;
   bottom: 0;
+  z-index: 1;
   background: rgba(0,0,0,0.8);
   font-size: 0.2rem;
   .circle
