@@ -2,11 +2,11 @@
   <div>
     <city-header></city-header>
     <!-- <city-hot-city :hotCityList='hotCityList'></city-hot-city>
-    <city-sort :allCityList='allCityList'></city-sort>
-    <city-all-city :allCityList="allCityList"></city-all-city> -->
+    <city-sort :allCityObject='allCityObject'></city-sort>
+    <city-all-city :allCityObject="allCityObject"></city-all-city> -->
     <city-content
      :hotCityList='hotCityList'
-     :allCityList='allCityList'
+     :allCityObject='allCityObject'
      ></city-content>
   </div>
 </template>
@@ -30,7 +30,7 @@ export default {
   data () {
     return {
       hotCityList: [],
-      allCityList: {}
+      allCityObject: {}
     }
   },
   mounted () {
@@ -40,8 +40,8 @@ export default {
         const data = res.data.data[0]
         this.hotCityList = data.hotCityList
         // console.log(data.hotCityList)
-        // console.log(data.allCityList)
-        this.allCityList = data.allCityList
+        // console.log(data.allCityObject)
+        this.allCityObject = data.allCityObject
       })
   }
 }

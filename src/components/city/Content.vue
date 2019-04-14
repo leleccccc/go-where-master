@@ -16,7 +16,7 @@
         <div>字母排序</div>
         <div>
           <ul>
-            <li v-for="(item, key) in allCityList" :key="item.id" @click="searchSort(key)">
+            <li v-for="(item, key) in allCityObject" :key="item.id" @click="searchSort(key)">
               {{ key }}
             </li>
           </ul>
@@ -24,7 +24,7 @@
       </div>
       <!-- A-Z排序 -->
       <div class="all-city-list">
-        <div class="city-item" v-for="(item, key) in allCityList" :key="key" :ref="key">
+        <div class="city-item" v-for="(item, key) in allCityObject" :key="key" :ref="key">
           <div>{{ key }}</div>
           <ul>
             <li v-for="val in item" :key="val.id" @click="changeCityName(val.city)">
@@ -43,7 +43,7 @@ import { mapMutations } from 'vuex'
 
 export default {
   name: 'CityContent',
-  props: ['hotCityList', 'allCityList'],
+  props: ['hotCityList', 'allCityObject'],
   data () {
     return {
       scroll: ''

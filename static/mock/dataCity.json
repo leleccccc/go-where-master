@@ -16,7 +16,7 @@
         { "id": 11, "city": "西安", "spell": "anxi" },
         { "id": 12, "city": "厦门", "xiamen": "xiamen" }
       ],
-      "allCityList":{
+      "allCityObject":{
         "A": [
           { "id": "1", "city": "阿坝藏族羌族自治州", "spell": "abeizangzuqiangzuzizhiqu" },
           { "id": "2", "city": "阿克苏地区", "spell": "akesudiqu" },
