@@ -29,7 +29,7 @@ import store from './store' // eslint-disable-line
 // element-ui
 import { Rate } from 'element-ui' // eslint-disable-line
 Vue.use(Rate)
-console.log('branch-sl-dev-test')
+console.log('master')
 
 /* eslint-disable no-new */
 new Vue({
